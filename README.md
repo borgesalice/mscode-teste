@@ -1,2 +1,2 @@
-# mscode-teste
+# Aplicação MSCode
 Aplicação para o teste de conhecimento do MSCode da Móveis Simonneti.
