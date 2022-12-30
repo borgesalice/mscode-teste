@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pesquisa de Satisfação | Móveis Simonetti</title>
+
+    <link rel="icon" type="image/png" href="assets/img/favicon.webp" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/style.css"
+      media="screen"
+    />
+  </head>
+
+  <body>
+    <!-- início do cabeçalho -->
+    <header>
+      <!-- início do menu de navegação -->
+      <nav>
+        <!-- logo -->
+        <img src="assets/img/header-logo.png" class="logo" />
+
+        <!-- início menu hamburguer para aparelhos mobile -->
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <!-- fim menu hamburguer para aparelhos mobile -->
+
+        <!-- início das abas do menu de navegação -->
+        <ul class="nav-list">
+          <li>
+            <a href="https://www.moveissimonetti.com.br/" target="_blank"
+              >Home</a
+            >
+          </li>
+          <li><a href="index.html">Avaliar</a></li>
+        </ul>
+        <!-- fim das abas do menu de navegação -->
+      </nav>
+      <!-- fim do menu de navegação -->
+    </header>
+    <!-- fim do cabeçalho -->
+
+    <!-- início do conteúdo da página -->
+    <main class="container">
+      <!-- título da pesquisa -->
+      <div class="satisfacao">
+        <h2>Pesquisa de Satisfação</h2>
+        <p>
+          Para avaliar cada item, leve em consideração a escala de 1 a 5, sendo
+          1 muito ruim e 5 muito bom. Responda com honestidade.
+        </p>
+      </div>
+
+      <!-- início do formulário -->
+      <form id="form" class="form">
+        <!--- input para inserir nome -->
+        <div class="form-control">
+          <label for="username">Nome</label>
+          <input
+            type="text"
+            id="username"
+            placeholder="Digite seu nome completo"
+          />
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+          <small>Mensagem de erro</small>
+        </div>
+
+        <!--- input para inserir email -->
+        <div class="form-control">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="email@exemplo.com" />
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+          <small>Mensagem de erro</small>
+        </div>
+
+        <!--- input para inserir cpf -->
+        <div class="form-control">
+          <label for="cpf">CPF</label>
+          <input
+            type="text"
+            id="cpf"
+            onkeypress="mascaracpf(this)"
+            placeholder="000.000.000-00"
+            required
+            autocomplete="off"
+            maxlength="14"
+          />
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+          <small>Mensagem de erro</small>
+        </div>
+
+        <!--- input para inserir telefone -->
+        <div class="form-control">
+          <label for="cellphone">Telefone</label>
+          <input
+            type="text"
+            id="cellphone"
+            onkeypress="mascara(this)"
+            placeholder="(00) 0 0000-0000"
+            required
+            autocomplete="off"
+            maxlength="15"
+          />
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+          <small>Mensagem de erro</small>
+        </div>
+
+        <!--- início da sessão de perguntas -->
+        <div>
+          <div class="perguntas">
+            <label><p>Como você avalia nosso atendimento?</p></label>
+            <div class="rating">
+              <div class="scale">
+                <input type="radio" name="atend" class="radio" id="atend1" />
+                <label for="atend1">1</label>
+              </div>
+
+              <div class="scale">
+                <input type="radio" name="atend" class="radio" id="atend2" />
+                <label for="atend2">2</label>
+              </div>
+
+              <div class="scale">
+                <input type="radio" name="atend" class="radio" id="atend3" />
+                <label for="atend3">3</label>
+              </div>
+
+              <div class="scale">
+                <input type="radio" name="atend" class="radio" id="atend4" />
+                <label for="atend4">4</label>
+              </div>
+
+              <div class="scale">
+                <input type="radio" name="atend" class="radio" id="atend5" />
+                <label for="atend5">5</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="perguntas">
+            <label><p>Como você avalia nossos produtos?</p></label>
+            <div class="rating">
+              <div class="scale">
+                <input type="radio" name="prod" class="radio" id="prod1" />
+                <label for="prod1">1</label>
+              </div>
+
+              <div class="scale">
+                <input type="radio" name="prod" class="radio" id="prod2" />
+                <label for="prod2">2</label>
+              </div>
+
+              <div class="scale">
+                <input type="radio" name="prod" class="radio" id="prod3" />
+                <label for="prod3">3</label>
+              </div>
+
+              <div class="scale">
+                <input type="radio" name="prod" class="radio" id="prod4" />
+                <label for="prod4">4</label>
+              </div>
+
+              <div class="scale">
+                <input type="radio" name="prod" class="radio" id="prod5" />
+                <label for="prod5">5</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="perguntas">
+            <label><p>Como você avalia nossos preços?</p></label>
+            <div class="rating">
+              <div class="scale">
+                <input type="radio" name="price" class="radio" id="price1" />
+                <label for="price1">1</label>
+              </div>
+
+              <div class="scale">
+                <input type="radio" name="price" class="radio" id="price2" />
+                <label for="price2">2</label>
+              </div>
+
+              <div class="scale">
+                <input type="radio" name="price" class="radio" id="price3" />
+                <label for="price3">3</label>
+              </div>
+
+              <div class="scale">
+                <input type="radio" name="price" class="radio" id="price4" />
+                <label for="price4">4</label>
+              </div>
+
+              <div class="scale">
+                <input type="radio" name="price" class="radio" id="price5" />
+                <label for="price5">5</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="perguntas">
+            <label><p>Como você avalia nossa entrega?</p></label>
+            <div class="rating">
+              <div class="scale">
+                <input
+                  type="radio"
+                  name="delivery"
+                  class="radio"
+                  id="delivery1"
+                />
+                <label for="delivery1">1</label>
+              </div>
+
+              <div class="scale">
+                <input
+                  type="radio"
+                  name="delivery"
+                  class="radio"
+                  id="delivery2"
+                />
+                <label for="delivery2">2</label>
+              </div>
+
+              <div class="scale">
+                <input
+                  type="radio"
+                  name="delivery"
+                  class="radio"
+                  id="delivery3"
+                />
+                <label for="delivery3">3</label>
+              </div>
+
+              <div class="scale">
+                <input
+                  type="radio"
+                  name="delivery"
+                  class="radio"
+                  id="delivery4"
+                />
+                <label for="delivery4">4</label>
+              </div>
+
+              <div class="scale">
+                <input
+                  type="radio"
+                  name="delivery"
+                  class="radio"
+                  id="delivery5"
+                />
+                <label for="delivery5">5</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="perguntas">
+            <label>
+              <p>Como você avalia nosso serviço de montagem?</p>
+            </label>
+            <div class="rating">
+              <div class="scale">
+                <input type="radio" name="mont" class="radio" id="mont1" />
+                <label for="mont1">1</label>
+              </div>
+
+              <div class="scale">
+                <input type="radio" name="mont" class="radio" id="mont2" />
+                <label for="mont2">2</label>
+              </div>
+
+              <div class="scale">
+                <input type="radio" name="mont" class="radio" id="mont3" />
+                <label for="mont3">3</label>
+              </div>
+
+              <div class="scale">
+                <input type="radio" name="mont" class="radio" id="mont4" />
+                <label for="mont4">4</label>
+              </div>
+
+              <div class="scale">
+                <input type="radio" name="mont" class="radio" id="mont5" />
+                <label for="mont5">5</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="perguntas">
+            <label><p>Como você avalia nosso suporte?</p></label>
+            <div class="rating">
+              <div class="scale">
+                <input type="radio" name="sup" class="radio" id="sup1" />
+                <label for="sup1">1</label>
+              </div>
+
+              <div class="scale">
+                <input type="radio" name="sup" class="radio" id="sup2" />
+                <label for="sup2">2</label>
+              </div>
+
+              <div class="scale">
+                <input type="radio" name="sup" class="radio" id="sup3" />
+                <label for="sup3">3</label>
+              </div>
+
+              <div class="scale">
+                <input type="radio" name="sup" class="radio" id="sup4" />
+                <label for="sup4">4</label>
+              </div>
+
+              <div class="scale">
+                <input type="radio" name="sup" class="radio" id="sup5" />
+                <label for="sup5">5</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="perguntas">
+            <label>
+              <p>
+                Você indicaria a Móveis Simonetti para algum amigo ou familiar?
+              </p>
+            </label>
+
+            <div class="rating">
+              <div class="scale">
+                <input type="radio" name="yesno" class="radio" id="yes" />
+                <label for="yes">Sim</label>
+              </div>
+
+              <div class="scale">
+                <input type="radio" name="yesno" class="radio" id="no" />
+                <label for="no">Não</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="perguntas">
+            <label for="observação">
+              <p>Há alguma observação que queira fazer?</p>
+            </label>
+            <textarea
+              rows="6"
+              style="width: 100%"
+              id="observação"
+              class="observacao"
+              placeholder="Digite aqui..."
+              name="observação"
+            ></textarea>
+          </div>
+        </div>
+        <!--- fim da sessão de perguntas -->
+
+        <!-- botão para enviar o formulário -->
+        <div class="alinhamento">
+          <button class="botao" type="submit" onclick="openModal()">
+            ENVIAR
+          </button>
+        </div>
+      </form>
+      <!-- fim do formulário -->
+    </main>
+    <!-- fim do conteúdo da página -->
+
+    <!-- início do rodapé -->
+    <footer>
+      <!-- início rodapé navegação -->
+      <div class="container-footer">
+        <div class="row-footer">
+          <!-- início coluna 1 -->
+          <div class="footer-col">
+            <h4>Empresa</h4>
+            <ul>
+              <li>
+                <a
+                  href="https://www.moveissimonetti.com.br/institucional/quem-somos"
+                >
+                  Quem somos
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.moveissimonetti.com.br/institucional/nossas-lojas"
+                >
+                  Nossas Lojas
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.moveissimonetti.com.br/institucional/politica-de-privacidade"
+                >
+                  Política de Privacidade
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- fim coluna 1 -->
+
+          <!-- início coluna 2 -->
+          <div class="footer-col">
+            <h4>Obter ajuda</h4>
+            <ul>
+              <li>
+                <a
+                  href="https://www.moveissimonetti.com.br/ajuda-e-suporte/compra-segura"
+                  >Compra Segura</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.moveissimonetti.com.br/ajuda-e-suporte/pagamento"
+                  >Pagamento</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.moveissimonetti.com.br/ajuda-e-suporte/envio-e-entrega"
+                  >Envio e Entrega</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.moveissimonetti.com.br/ajuda-e-suporte/trocas-e-devolucoes"
+                  >Trocas e Devoluções</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.moveissimonetti.com.br/ajuda-e-suporte/fale-conosco"
+                  >Fale Conosco</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- fim coluna 2 -->
+
+          <!-- início coluna 3 -->
+          <div class="footer-col">
+            <h4>Loja online</h4>
+            <ul>
+              <li>
+                <a href="https://www.moveissimonetti.com.br/moveis">Móveis</a>
+              </li>
+              <li>
+                <a href="https://www.moveissimonetti.com.br/colchoes"
+                  >Colchões</a
+                >
+              </li>
+              <li>
+                <a href="https://www.moveissimonetti.com.br/eletrodomesticos"
+                  >Eletrodomésticos</a
+                >
+              </li>
+              <li>
+                <a href="https://www.moveissimonetti.com.br/eletronicos"
+                  >Eletrônicos</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- fim coluna 3 -->
+
+          <!-- início coluna 4 -->
+          <div class="footer-col">
+            <h4>Receba as melhores ofertas!</h4>
+            <div class="form-sub">
+              <form>
+                <input
+                  type="email"
+                  placeholder="Digite o seu e-mail"
+                  required
+                />
+                <button>inscrever</button>
+              </form>
+            </div>
+
+            <div class="medias-socias">
+              <a
+                href="https://www.facebook.com/moveissimonetti"
+                target="_blank"
+              >
+                <i class="fa fa-facebook"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/moveis.simonetti/"
+                target="_blank"
+              >
+                <i class="fa fa-instagram"></i>
+              </a>
+              <a href="https://twitter.com/moveissimonetti" target="_blank">
+                <i class="fa fa-twitter"></i>
+              </a>
+            </div>
+          </div>
+          <!-- fim coluna 4 -->
+        </div>
+      </div>
+      <!-- fim rodapé navegação -->
+
+      <!-- início copyrigth rodapé -->
+      <div class="copyrigth">
+        &copy; 2021, Alice Borges Oliveira Pereira - Todos os direitos
+        reservados.
+      </div>
+      <!-- fim copyrigth rodapé -->
+    </footer>
+    <!-- fim do rodapé -->
+
+    <!-- links para fontes externas (icones e script.js) -->
+    <script
+      src="https://kit.fontawesome.com/f3a38cc465.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/navbar.js"></script>
+  </body>
+</html>
+
+<!--
+  PARA LEMBRAR:
+  maxLength = limitador de caracteres de um input 
+-->

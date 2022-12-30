@@ -1,0 +1,500 @@
+/* todos os elementos da página */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* elementos de tag <body> */
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #eaeaea;
+  font-family: sans-serif;
+  color: #000;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-transform: uppercase;
+  color: #000;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 3em;
+  align-items: center;
+  background: #fff;
+  height: 8vh;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* */
+.nav-list {
+  list-style: none;
+  display: flex;
+  z-index: 999;
+}
+
+/* navegação do cabeçalho */
+.nav-list li {
+  letter-spacing: 3px;
+  margin-left: 32px;
+  font-weight: bold;
+}
+
+/* deixa o menu hamburguer invisível */
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+/* desenha o menu hamburguer*/
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: #000;
+  margin: 8px;
+  transition: 0.3s;
+}
+
+@media (max-width: 999px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-list {
+    position: absolute;
+    top: 15vh;
+    right: 0;
+    width: 50vw;
+    height: 92vh;
+    background: #fff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+  .nav-list li {
+    margin-left: 0;
+    opacity: 0;
+  }
+  .mobile-menu {
+    display: block;
+  }
+}
+
+.nav-list.active {
+  transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
+}
+
+/* box contendo o formulário */
+.container {
+  width: 95%;
+  border-radius: 10px;
+  margin: 3em auto;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+/* deixa o formulário responsivo */
+@media (min-width: 576px) {
+  .container {
+    width: 90%;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 80%;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 70%;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 50%;
+  }
+}
+@media (min-width: 1980px) {
+  .container {
+    width: 35%;
+  }
+}
+
+.satisfacao {
+  background-color: #eee;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 25px;
+  text-align: justify;
+}
+
+.satisfacao p {
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+.form {
+  padding: 20px;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+  width: 100%;
+}
+
+.form-control label {
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.form-control input {
+  border: 2px solid #f0f0f0;
+  display: block;
+  border-radius: 10px;
+  font-size: 1em;
+  width: 100%;
+  padding: 10px;
+  box-shadow: 1px 1px 6px #0000001c;
+  z-index: 1;
+}
+
+.form-control i {
+  position: absolute;
+  top: 45px;
+  right: 10px;
+  visibility: hidden;
+}
+
+.form-control small {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+/* error and success */
+.form-control.success input {
+  border-color: #2ecc71;
+}
+
+.form-control.error input {
+  border-color: #e74c3c;
+}
+
+.form-control.success i.fa-check-circle {
+  color: #2ecc71;
+  visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+.form-control.error small {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+/* referente aos elementos de tags <input>, <textarea> e <button> */
+input,
+textarea,
+button {
+  font-family: sans-serif;
+  font-size: 1em;
+  border-radius: 5px;
+}
+
+/* referente a todas as peeguntas */
+.perguntas {
+  margin-bottom: 1em;
+  /*text-align: center;*/
+}
+
+/* referente ao texto das perguntas */
+.perguntas p {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+/* divs que contém a tag <textarea> */
+.perguntas textarea:focus,
+input:focus {
+  background: #f5f5f5;
+}
+
+/* área de observação */
+textarea {
+  border: 2px solid #f0f0f0;
+  display: block;
+  border-radius: 10px;
+  font-size: 1em;
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  box-shadow: 1px 1px 6px #0000001c;
+}
+
+/* altera a borda quando os inputs ou a caixa de texto estão em foco */
+textarea:focus-visible,
+input:focus-visible {
+  outline: 1px solid #888;
+}
+
+/* adiciona o hover quando o cursor estiver sobre cada input */
+textarea:hover,
+select:hover,
+input[type="text"]:hover,
+input[type="email"]:hover {
+  color: #000;
+  transition: 300ms ease-out;
+  border-color: #bdbdbd;
+}
+
+/* adiciona o hover ao placeholder quando o cursor estiver sobre cada input */
+textarea:hover::placeholder,
+select:hover::placeholder,
+input[type="text"]:hover::placeholder,
+input[type="email"]:hover::placeholder {
+  color: #000;
+  transition: 300ms ease-out;
+}
+
+.scale {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0px 10px 20px 10px;
+}
+
+.scale label {
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.radio {
+  cursor: pointer;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border: 3px solid #949494;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+}
+
+.radio:before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: #b9b9b9;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 600ms ease-in-out;
+  position: absolute;
+}
+
+.radio:checked:before {
+  opacity: 1;
+}
+
+/* para alinhar o botão ao centro*/
+.alinhamento {
+  text-align: center;
+}
+
+/* auto explicativo */
+.botao {
+  width: 100%;
+  height: 40px;
+  font-size: 1.1em;
+  background: #d33636;
+  border: 0;
+  margin-bottom: 1em;
+  color: #ffffff;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* botão quando o cursor estiver sobre ele */
+.botao:hover {
+  background: #9e2424;
+  box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
+  text-shadow: none;
+  transition: 1s;
+}
+
+/* rodapé */
+footer {
+  background-color: #bf171e;
+  padding: 50px 0px 10px 0px;
+}
+
+.container-footer {
+  max-width: 1400px;
+  padding: 0 4%;
+  margin: auto;
+}
+
+.row-footer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-col h4 {
+  font-size: 22px;
+  color: white;
+  margin-bottom: 20px;
+  font-weight: 500;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col ul li {
+  margin: 10px 0;
+}
+
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: white;
+  text-decoration: none;
+  font-weight: 300;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #cecdcd;
+  padding-left: 10px;
+}
+
+.footer-col .medias-socias {
+  margin-top: 30px;
+}
+
+.footer-col .medias-socias a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  margin: 0 10px 10px 0;
+  text-decoration: none;
+  border-radius: 50%;
+  color: white;
+  border: 1px solid white;
+  transition: all 0.5s ease;
+}
+
+.footer-col .medias-socias a i {
+  font-size: 20px;
+}
+
+.footer-col .medias-socias a:hover {
+  color: #bf171e;
+  background-color: white;
+}
+
+.footer-col .form-sub input {
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  outline: none;
+  border: 1px solid white;
+  color: white;
+  background-color: #bf171e;
+}
+
+.footer-col .form-sub input::placeholder {
+  color: white;
+}
+
+.footer-col .form-sub button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 17px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: #bf171e;
+  border-radius: 3px;
+  font-weight: bold;
+  background-color: white;
+}
+
+/* Responsivo */
+@media (max-width: 800px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 600px) {
+  .footer-col {
+    width: 100%;
+  }
+}
+
+/* linha de copyrigth */
+.copyrigth {
+  margin-top: 30px;
+  background-color: #fff;
+  color: #1a1a1a;
+  text-align: center;
+  font-size: 13px;
+  padding: 15px;
+}
