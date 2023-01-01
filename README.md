@@ -35,7 +35,8 @@ O HTML em si é divido em duas partes, primeiramente, dentro do corpo do HTML, e
     </head>
 
     <body>
-        <!--- No body estará todo o conteúdo da página - aquilo que visualizamos no navegador por exemplo. --->
+        <!--- No body estará todo o conteúdo da página - aquilo que visualizamos
+        no navegador por exemplo. --->
     </body>
 </html>
 ```
@@ -45,19 +46,27 @@ Para a construção da página (`<body>`), essa foi dividida em três partes, se
 ## Visualização
 ### Cabeçalho
 No cabeçalho da página observamos a logo da empresa juntamente com duas seções de navegação: **home** que leva à página inicial da loja online e **avaliar** que corresponte a página de formulário de satisfação.
+
 <img src="assets/readme-img/cabecalho.png"/>
+
 
 ### Pesquisa
 Na seção de pesquisa identificamos 3 partes principais, sendo elas:
 
 **Identificação do cliente**
+
 <img src="assets/readme-img/pesquisa_1.png"/>
 
+
 **Perguntas objetivas**
+
 <img src="assets/readme-img/pesquisa_2.png"/>
 
+
 **Observações e envio**
+
 <img src="assets/readme-img/pesquisa_3.png"/>
+
 
 ### Rodapé
 A parte final do site (rodapé) contém links funcionais que direcionam para páginas externas do próprio site da Móveis Simonetti, bem como uma área para inscrição na "newlester".
