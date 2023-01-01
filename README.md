@@ -26,6 +26,7 @@ Este projeto visa se adequar a proposta para o teste de conhecimento do MSCode d
 
 ### HTML5
 O HTML em si é divido em duas partes, primeiramente, dentro do corpo do HTML, encrontramos as tags `<head>` e `<body>`, que ficam dispostas da seguinte maneira:
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -43,6 +44,44 @@ O HTML em si é divido em duas partes, primeiramente, dentro do corpo do HTML, e
 
 Para a construção da página (`<body>`), essa foi dividida em três partes, sendo elas: cabeçalho (`<head>`), pesquisa (`<main>`) e rodapé (`<footer>`). [Clique aqui](#visualização) para visualizar cada seção do site.
 
+### CSS
+Os códigos CSS podem ser adicionado diretamente nas tags `<style>` ou através de um arquivo externo importado através de um link - esse localizado dentro da tag `<head>` do HTML - como citado antes. Na página foram utilizadas diversas funcionalidades do CSS para dar estilo ao site, temos como exemplo o menu responsivo para dispositivos móveis, estilizado a partir do seguinte código:
+
+```css
+media (max-width: 999px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-list {
+    position: absolute;
+    top: 15vh;
+    right: 0;
+    width: 50vw;
+    height: 92vh;
+    background: #fff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+  .nav-list li {
+    margin-left: 0;
+    opacity: 0;
+  }
+  .mobile-menu {
+    display: block;
+  }
+```
+
+O trecho de código acima foi retirado do arquivo _style.css_ do projeto e aplica estilo específicamente ao menu lateral criado para maior responsividade em dispositivos móveis.
+
+Na criação do menu lateral havia a necessidade do mesmo permanecer invisível durante a navegação do site e se tornar visível, apenas, quando existisse a ação de _click_ no ícone do menu. Para atender esse requisito foi usado `overflow-x: hidden`, determinando que, tudo que for renderizado além das "bordas" esquerda ou direita, será ocultado.
+
+Podemos ainda observar várias linhas que são extremamente utilizadas na estilização dos sites: `margin-left: 0` que aplica margem à esquerda do objeto e `opacity: 0` que determina a opacidade do objeto. Outras linhas que comumente são utilizadas no CSS são `width: 50vw` e `height: 92vh` que determinam o tamanho do objeto manipulado.
+
+### JAVASCRIPT
+
 ## Visualização
 ### Cabeçalho
 No cabeçalho da página observamos a logo da empresa juntamente com duas seções de navegação: **home** que leva à página inicial da loja online e **avaliar** que corresponte a página de formulário de satisfação.
@@ -53,21 +92,21 @@ No cabeçalho da página observamos a logo da empresa juntamente com duas seçõ
 ### Pesquisa
 Na seção de pesquisa identificamos 3 partes principais, sendo elas:
 
-**Identificação do cliente**
+**Identificação do cliente:**
 
 <img src="assets/readme-img/pesquisa_1.png"/>
 
 
-**Perguntas objetivas**
+**Perguntas objetivas:**
 
 <img src="assets/readme-img/pesquisa_2.png"/>
 
 
-**Observações e envio**
+**Observações e envio:**
 
 <img src="assets/readme-img/pesquisa_3.png"/>
 
 
 ### Rodapé
-A parte final do site (rodapé) contém links funcionais que direcionam para páginas externas do próprio site da Móveis Simonetti, bem como uma área para inscrição na "newlester".
+A parte final do site (rodapé) contém links funcionais que direcionam para páginas externas do próprio site da Móveis Simonetti, bem como uma área para inscrição na "newlester". Ainda foi adicionado uma linha constando o copyright.
 <img src="assets/readme-img/rodape.png"/>
