@@ -18,11 +18,11 @@
 Este projeto visa se adequar a proposta para o teste de conhecimento do MSCode da Móveis Simonneti. No qual foi solicitado uma aplicação para a ocorrência de uma pesquisa de satisfação, de modo que a mesma seja respondida pelos clientes da Móveis Simonetti.
 
 ## Tecnologias Utilizadas
-|Tecnologias|Extensão|Descrição|
+|Tecnologia|Extensão|Descrição|
 |-|-|-|
 |[HTML5](#html5)|.html|HTML (Linguagem de Marcação de Hipertexto) é o código usado para estruturar uma página web e seu conteúdo.|
 |[CSS](#css)|.css|CSS (Folha de Estilo em Cascata) é o código que você usa para dar estilo à sua página Web. O CSS permite aplicar estilos seletivamente a elementos em documentos HTML.|
-[JAVASCRIPT](#js)|.js|JavaScript é uma linguagem de programação que permite implementar itens complexos em páginas web mostrando conteúdo que se atualiza em um intervalo de tempo, mapas interativos ou gráficos 2D/3D animados, etc.|
+[JavaScript](#js)|.js|JavaScript é uma linguagem de programação que permite implementar itens complexos em páginas web mostrando conteúdo que se atualiza em um intervalo de tempo, mapas interativos ou gráficos 2D/3D animados, etc.|
 
 ### HTML5
 O HTML em si é divido em duas partes, primeiramente, dentro do corpo do HTML, encrontramos as tags `<head>` e `<body>`, que ficam dispostas da seguinte maneira:
@@ -80,7 +80,8 @@ Na criação do menu lateral havia a necessidade do mesmo permanecer invisível 
 
 Podemos ainda observar várias linhas que são extremamente utilizadas na estilização dos sites: `margin-left: 0` que aplica margem à esquerda do objeto e `opacity: 0` que determina a opacidade do objeto. Outras linhas que comumente são utilizadas no CSS são `width: 50vw` e `height: 92vh` que determinam o tamanho do objeto manipulado.
 
-### JAVASCRIPT
+### JavaScript
+
 
 ## Visualização
 ### Cabeçalho
