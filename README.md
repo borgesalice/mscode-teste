@@ -8,7 +8,7 @@
 * [Tecnologias Utilizadas](#tecnologias-utilizadas)
     * [HTML5](#html5)
     * [CSS](#css)
-    * [JAVASCRIPT](#javascript)
+    * [JavaScript](#javascript)
 * [Visualização](#visualização)
     * [Cabeçalho](#cabeçalho)
     * [Pesquisa](#pesquisa)
@@ -81,7 +81,34 @@ Na criação do menu lateral havia a necessidade do mesmo permanecer invisível 
 Podemos ainda observar várias linhas que são extremamente utilizadas na estilização dos sites: `margin-left: 0` que aplica margem à esquerda do objeto e `opacity: 0` que determina a opacidade do objeto. Outras linhas que comumente são utilizadas no CSS são `width: 50vw` e `height: 92vh` que determinam o tamanho do objeto manipulado.
 
 ### JavaScript
+De modo geral o JavaScript é uma linguagem de programação que permite a criação de funções dentro de uma aplicação podendo utilizar parâmetros específicos para que elas ocorram. No projeto foram usadas funções para analizar e validar o ceonteúdo escrito nos _inputs_ da seção de [identificação do cliente](identificação-do-cliente) da pesquisa.
 
+Abaixo observamos um trecho do código da função citada acima:
+
+```js
+// função para validar (ou não) os inputs
+function checkInputs() {
+  const usernameValue = username.value;
+  const emailValue = email.value;
+  const cpfValue = cpf.value;
+  const cellphoneValue = cellphone.value;
+
+  // se o input de nome for vazio -> seta erro, se não -> seta sucesso
+  if (usernameValue === "") {
+    setErrorFor(username, "O nome é obrigatório.");
+  } else {
+    setSuccessFor(username);
+  }
+```
+  
+```js
+// colocar automaticamente os caracteres extras no input cpf
+function mascaracpf(cpf) {
+  if (cpf.value.length == 3) cpf.value = cpf.value + ".";
+  if (cpf.value.length == 7) cpf.value = cpf.value + ".";
+  if (cpf.value.length == 11) cpf.value = cpf.value + "-";
+}
+```
 
 ## Visualização
 ### Cabeçalho
