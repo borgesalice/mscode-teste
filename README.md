@@ -9,6 +9,10 @@
     * [HTML5](#html5)
     * [CSS](#css)
     * [JAVASCRIPT](#javascript)
+* [Visualização](#visualização)
+    * [Cabeçalho](#cabeçalho)
+    * [Pesquisa](#pesquisa)
+    * [Rodapé](#rodapé)
 
 ## Escopo do Projeto
 Este projeto visa se adequar a proposta para o teste de conhecimento do MSCode da Móveis Simonneti. No qual foi solicitado uma aplicação para a ocorrência de uma pesquisa de satisfação, de modo que a mesma seja respondida pelos clientes da Móveis Simonetti.
@@ -22,19 +26,39 @@ Este projeto visa se adequar a proposta para o teste de conhecimento do MSCode d
 
 ### HTML5
 O HTML em si é divido em duas partes, primeiramente, dentro do corpo do HTML, encrontramos as tags `<head>` e `<body>`, que ficam dispostas da seguinte maneira:
-```
+```html
 <!DOCTYPE html>
 <html>
     <head>
-        Aqui encontramos todo o código de configurações do site, contendo ainda links para arquivos externos como o CSS.
+        <!--- Aqui encontramos todo o código de configurações do site,
+        contendo ainda links para arquivos externos como o CSS. --->
     </head>
 
     <body>
-        No body estará todo o conteúdo da página - aquilo que visualizamos no navegador por exemplo.
+        <!--- No body estará todo o conteúdo da página - aquilo que visualizamos no navegador por exemplo. --->
     </body>
 </html>
 ```
 
-Para a construção da página (`<body>`), essa foi dividida em três partes, sendo elas: cabeçalho (`<head>`), pesquisa (`<main>`) e rodapé (`<footer>`).
+Para a construção da página (`<body>`), essa foi dividida em três partes, sendo elas: cabeçalho (`<head>`), pesquisa (`<main>`) e rodapé (`<footer>`). [Clique aqui](#visualização) para visualizar cada seção do site.
 
+## Visualização
+### Cabeçalho
+No cabeçalho da página observamos a logo da empresa juntamente com duas seções de navegação: **home** que leva à página inicial da loja online e **avaliar** que corresponte a página de formulário de satisfação.
+<img src="assets/readme-img/cabecalho.png"/>
 
+### Pesquisa
+Na seção de pesquisa identificamos 3 partes principais, sendo elas:
+
+**Identificação do cliente**
+<img src="assets/readme-img/pesquisa_1.png"/>
+
+**Perguntas objetivas**
+<img src="assets/readme-img/pesquisa_2.png"/>
+
+**Observações e envio**
+<img src="assets/readme-img/pesquisa_3.png"/>
+
+### Rodapé
+A parte final do site (rodapé) contém links funcionais que direcionam para páginas externas do próprio site da Móveis Simonetti, bem como uma área para inscrição na "newlester".
+<img src="assets/readme-img/rodape.png"/>
