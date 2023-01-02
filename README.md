@@ -146,7 +146,7 @@ A parte final do site (rodapé) contém links funcionais que direcionam para pá
 
 ## Árvore de Arquivos
 
-├── <label src="/assets">assets</label><br>
+├── <label href="/assets">assets</label><br>
 |   └── css
 |   |   └── reset.css
 |   |   └── style.css
