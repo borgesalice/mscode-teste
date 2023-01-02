@@ -13,6 +13,7 @@
     * [Cabeçalho](#cabeçalho)
     * [Pesquisa](#pesquisa)
     * [Rodapé](#rodapé)
+* [Árvore de Arquivos](#árvore-de-arquivos)
 
 ## Escopo do Projeto
 Este projeto visa se adequar a proposta para o teste de conhecimento do MSCode da Móveis Simonneti. No qual foi solicitado uma aplicação para a ocorrência de uma pesquisa de satisfação, de modo que a mesma seja respondida pelos clientes da Móveis Simonetti.
@@ -142,3 +143,27 @@ Na seção de pesquisa identificamos 3 partes principais, sendo elas:
 ### Rodapé
 A parte final do site (rodapé) contém links funcionais que direcionam para páginas externas do próprio site da Móveis Simonetti, bem como uma área para inscrição na "newlester". Ainda foi adicionado uma linha constando o copyright.
 <img src="assets/readme-img/rodape.png"/>
+
+## Árvore de Arquivos
+├── assets
+|   └── css
+|   |   └── reset.css
+|   |   └── style.css
+|   |
+|   └── img
+|   |   └── favicon.webp
+|   |   └── header-logo.ong
+|   |
+|   └── js
+|   |    └── navbar.js
+|   |    └── script.js
+|   |
+|   └── readme-img
+|       └── cabecalho.png
+|       └── pesquisa_1.png
+|       └── pesquisa_2.png
+|       └── pesquisa_3.png
+|       └── rodape.png
+|
+├── index.html
+└── README.md
