@@ -176,5 +176,5 @@ A parte final do site (rodapé) contém links funcionais que direcionam para pá
 ```
 
 <div aling="center">
-            #### Made with 💙 by Alice Borges | 😁 [See my LinkedIn](https://www.linkedin.com/in/alice-borges-703a55244/)
+    <h4>Made with 💙 by Alice Borges | 😁</h4> <h4 href="https://www.linkedin.com/in/alice-borges-703a55244/">See my LinkedIn</h4>
 </div>
