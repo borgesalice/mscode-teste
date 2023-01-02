@@ -146,26 +146,26 @@ A parte final do site (rodapé) contém links funcionais que direcionam para pá
 
 ## Árvore de Arquivos
 
-├── assets                  <br>
-|   └── css                 <br>
-|   |   └── reset.css       <br>
-|   |   └── style.css       <br>
-|   |                       <br>
-|   └── img                 <br>
-|   |   └── favicon.webp    <br>
-|   |   └── header-logo.png <br>
-|   |                       <br>
-|   └── js                  <br>
-|   |   └── navbar.js       <br>
-|   |   └── script.js       <br>
-|   |                       <br>
-|   └── readme-img          <br>
-|       └── cabecalho.png   <br>
-|       └── pesquisa_1.png  <br>
-|       └── pesquisa_2.png  <br>
-|       └── pesquisa_3.png  <br>
-|       └── rodape.png      <br>
-|                           <br>
-├── index.html              <br>
-└── README.md               <br>
+├── assets
+|   └── css
+|   |   └── reset.css
+|   |   └── style.css
+|   |
+|   └── img
+|   |   └── favicon.webp
+|   |   └── header-logo.png
+|   |
+|   └── js
+|   |   └── navbar.js
+|   |   └── script.js
+|   |
+|   └── readme-img
+|       └── cabecalho.png
+|       └── pesquisa_1.png
+|       └── pesquisa_2.png
+|       └── pesquisa_3.png
+|       └── rodape.png
+|
+├── index.html
+└── README.md
 
