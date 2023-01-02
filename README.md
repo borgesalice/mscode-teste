@@ -145,7 +145,7 @@ A parte final do site (rodapé) contém links funcionais que direcionam para pá
 <img src="assets/readme-img/rodape.png"/>
 
 ## Árvore de Arquivos
-```html
+```
 ├── <label src="/assets">assets</label>
 |   └── css
 |   |   └── reset.css
