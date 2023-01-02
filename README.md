@@ -15,6 +15,7 @@
     * [Pesquisa](#pesquisa)
     * [Rodapé](#rodapé)
 * [Árvore de Arquivos](#árvore-de-arquivos)
+* [Autoria](#made-with-💙-by-alice-borges-|-😁-[See my LinkedIn](https://www.linkedin.com/in/alice-borges-703a55244/))
 
 ## Escopo do Projeto
 Este projeto visa se adequar a proposta para o teste de conhecimento do MSCode da Móveis Simonneti. No qual foi solicitado uma aplicação para a ocorrência de uma pesquisa de satisfação, de modo que a mesma seja respondida pelos clientes da Móveis Simonetti.
@@ -175,6 +176,4 @@ A parte final do site (rodapé) contém links funcionais que direcionam para pá
 └── README.md
 ```
 
-<div aling="center">
-    <h4>Made with 💙 by Alice Borges | 😁</h4> <h4 href="https://www.linkedin.com/in/alice-borges-703a55244/">See my LinkedIn</h4>
-</div>
+#### Made with 💙 by Alice Borges | 😁 [See my LinkedIn](https://www.linkedin.com/in/alice-borges-703a55244/)
