@@ -175,4 +175,4 @@ A parte final do site (rodapé) contém links funcionais que direcionam para pá
 └── README.md
 ```
 
-#### Made with 💙 by Alice Borges | 😁 [See my LinkedIn](https://www.linkedin.com/in/alice-borges-703a55244/)
+<h4 aling="center">Made with 💙 by Alice Borges | 😁 [See my LinkedIn](https://www.linkedin.com/in/alice-borges-703a55244/)</h4>
