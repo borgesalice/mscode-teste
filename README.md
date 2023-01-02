@@ -5,6 +5,7 @@
 
 ### Índice
 * [Escopo do Projeto](#escopo-do-projeto)
+    * [Links](#links)
 * [Tecnologias Utilizadas](#tecnologias-utilizadas)
     * [HTML5](#html5)
     * [CSS](#css)
@@ -17,6 +18,10 @@
 
 ## Escopo do Projeto
 Este projeto visa se adequar a proposta para o teste de conhecimento do MSCode da Móveis Simonneti. No qual foi solicitado uma aplicação para a ocorrência de uma pesquisa de satisfação, de modo que a mesma seja respondida pelos clientes da Móveis Simonetti.
+
+### Links
+* Repositório: https://github.com/borgesalice/mscode-teste
+* Deployment: https://borgesalice.github.io/mscode-teste/
 
 ## Tecnologias Utilizadas
 |Tecnologia|Extensão|Descrição|
