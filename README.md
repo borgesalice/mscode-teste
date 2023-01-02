@@ -145,19 +145,19 @@ A parte final do site (rodapé) contém links funcionais que direcionam para pá
 <img src="assets/readme-img/rodape.png"/>
 
 ## Árvore de Arquivos
-```
-├── assets
+```html
+├── <label src="/assets">assets</label>
 |   └── css
 |   |   └── reset.css
 |   |   └── style.css
 |   |
 |   └── img
 |   |   └── favicon.webp
-|   |   └── header-logo.ong
+|   |   └── header-logo.png
 |   |
 |   └── js
-|   |    └── navbar.js
-|   |    └── script.js
+|   |   └── navbar.js
+|   |   └── script.js
 |   |
 |   └── readme-img
 |       └── cabecalho.png
