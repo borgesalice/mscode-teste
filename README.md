@@ -81,7 +81,7 @@ Na criação do menu lateral havia a necessidade do mesmo permanecer invisível 
 Podemos ainda observar várias linhas que são extremamente utilizadas na estilização dos sites: `margin-left: 0` que aplica margem à esquerda do objeto e `opacity: 0` que determina a opacidade do objeto. Outras linhas que comumente são utilizadas no CSS são `width: 50vw` e `height: 92vh` que determinam o tamanho do objeto manipulado.
 
 ### JavaScript
-De modo geral o JavaScript é uma linguagem de programação que permite a criação de funções dentro de uma aplicação podendo utilizar parâmetros específicos para que elas ocorram. No projeto foram usadas funções para analizar e validar o ceonteúdo escrito nos _inputs_ da seção de [identificação do cliente](identificação-do-cliente) da pesquisa.
+De modo geral o JavaScript é uma linguagem de programação que permite a criação de funções dentro de uma aplicação podendo utilizar parâmetros específicos para que elas ocorram. No projeto foram usadas funções para analizar e validar o conteúdo escrito nos _inputs_ da seção de [identificação do cliente](identificação-do-cliente) da pesquisa.
 
 Abaixo observamos um trecho do código da função citada acima:
 
@@ -93,14 +93,17 @@ function checkInputs() {
   const cpfValue = cpf.value;
   const cellphoneValue = cellphone.value;
 
-  // se o input de nome for vazio -> seta erro, se não -> seta sucesso
   if (usernameValue === "") {
     setErrorFor(username, "O nome é obrigatório.");
   } else {
     setSuccessFor(username);
   }
 ```
-  
+
+Com o `if` determinamos os parâmetros a serem analizados e ainda definimos uma ação a ser realizada. No trecho citado o parâmetro `usernameValue` corresponde ao conteúdo escrito no input de "Nome", o qual é identificado pelo `id="username"`. Já a função que definimos é `setErrorFor` que deve ser acompanhada do seu "alvo" e a mensagem que aparecerá, neste caso `setErrorFor(username, "O nome é obrigatório")`.
+
+Para o restante dos inputs, seguimos a mesma estrutura de código, alterando apenas o necessário para corresponder as necessidades de cada input.
+
 ```js
 // colocar automaticamente os caracteres extras no input cpf
 function mascaracpf(cpf) {
@@ -109,6 +112,7 @@ function mascaracpf(cpf) {
   if (cpf.value.length == 11) cpf.value = cpf.value + "-";
 }
 ```
+Com o parâmetro `cpf.value.length == 3` determinamos que se a quantidade de caracteres do _value_ do input "CPF" for igual a 3 será adicionado um "." após os mesmos. O mesmo acontece no restante dos parâmetros. Essa função foi criada para, enquanto sendo digitado, será adiocionado automáticamente a pontuação padrão do CPF. Essa função foi definida também para o input de "Telefone" apenas sendo adaptada para as necessidades do mesmo.
 
 ## Visualização
 ### Cabeçalho
